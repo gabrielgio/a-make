@@ -9,7 +9,7 @@ LABEL "com.github.actions.description"="Run make file action"
 LABEL "com.github.actions.icon"="package"
 LABEL "com.github.actions.color"="blue"
 
-RUN ["dnf", "install", "make", "-y"]
+RUN ["dnf", "install", "make", "which" "-y"]
 
 COPY entrypoint.sh /entrypoint.sh
 
